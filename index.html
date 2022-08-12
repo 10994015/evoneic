@@ -21,9 +21,7 @@
     	<a href="#about" title="">About</a>
     	<a href="#services" title="">Services</a>
     	<a href="#work" title="">Cooperation</a>
-    	<a href="#prodact" title="">Product</a>
     	<a href="#contact" title="">Contact</a>
-      <a href="#login" title="">Login</a>
     		
     	</div>
     </header>
@@ -86,6 +84,13 @@
 
 	<div class="line"></div>
 
+  <div id="workModule">
+    <div class="back" id="workModuleClose"></div>
+    <div class="content">
+        <img src="" id="workModuleImg">
+    </div>
+  </div>
+
 	<section class="services" id="services">
       <div class="title reveal">
         <h2 class="section-title">服務項目</h2>
@@ -122,14 +127,17 @@
           </div>
         </div>
       </div>
-    </section>
+	</section>
+	<div class="line"></div>
     <section class="work" id="work">
     <div class="title reveal">
-    <h2 class="section-title section-title2">合作對象</h2> 	
+    <h2 class="section-title ">最近完成項目</h2> 	
     </div>
-    <div class="content reveal">
-
-     <div class="card">
+    <div class="content reveal" >
+       <div id="waterfall">
+        
+       </div>
+     <!-- <div class="card">
       <h2>edu-aequitas</h2>
        <div class="card-img">
            <a href="https://www.edu-aequitas.com/"><img src="img/101.jpg" alt=""></a>
@@ -146,60 +154,12 @@
        <div class="card-img">
            <a href="https://robot.shayangye.com/"><img src="img/102.jpg" alt=""></a>
        </div> 	
-     </div>
-      <div class="title reveal">
-          <a href="javascript:;" class="btn">查看更多</a>
-        </div>
-    </div>
+     </div> -->
+	</div>
+	<div class="seemoreDiv" id="seemoreDiv"><button class="seemore reveal" id="wordSeemore">SEE MORE</button></div>
     </section>
 
-    <!-- <section class="prodact" id="prodact">
-      <div class="title reveal">
-        <h2 class="section-title">產品銷售</h2>
-        <p>吃有機-愛有機-有機生活</p>
-      </div>
-      <div class="content reveal">
-        <div class="card reveal">
-          <div class="prodact-icon">
-           <img src="img/prodact1.jpg" alt="">
-          </div>
-          <div class="info">
-            <h3>純有機糙米</h3>
-            <p>
-            #全國唯一整區段栽培 慈心有機驗證-0001號 北緯23.5度溫暖陽光 引烏山頭水庫天然水源灌溉<br>
-            #太保市農會於民國86年成立第一個有機米產銷班迄今<br>
-            #符合「新農業運動」：農業三生（生產、生活、生態）、三力（創力農業、活力農民、魅力農村）之永續農業
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="prodact-icon">
-            <img src="img/prodact2.jpg" alt="">
-          </div>
-          <div class="info">
-            <h3>純有機白米</h3>
-            <p>
-            #從入庫檢驗、儲存、碾製、冷藏、包裝等一貫作業均經過嚴格的品管<br>
-            #「慈心有機農業基金會」認證，配合慈心有機農業基金會取得OTAP有機產銷履歷<br>
-            #為行政院農委會公告之109年優良水稻推廣品種 - 台農81號</p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="prodact-icon">
-            <img src="img/prodact3.jpg" alt="">
-          </div>
-          <div class="info">
-            <h3>豐禾日粒 純有機白米</h3>
-            <p>
-            #台農81號稻米為近幾年的新品種，抗病力佳，不受稻熱病影響，用肥少產量佳，是友善土地作物代表<br>
-            #台農81號米具有米粒外觀良好、透明度佳、食用品質優良等特點<br>
-            #每包米皆為真空包裝，確保品質. 如收貨後一段時間後有失真空的情形，其品質仍為正常，但請予以冷藏儲放，可避免濕氣影響</p>
-          </div>
-        </div>
-        <div class="title">
-          <a href="#" class="btn">立即購買</a>
-        </div>
-      </div>
-    </section> -->
+    
 <div class="line"></div>
 
     <section class="contact" id="contact">
@@ -269,6 +229,8 @@
     	<p>Copyright @2021 <a href="#" title="">eVone</a>. All Rights Reserved.</p>
     </footer>
 
-	<script type="text/javascript" src="script/script.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript" src="script/module.js"></script>
 </body>
 </html>
