@@ -54,7 +54,7 @@ for(let i=1;i<=38;i++){
   waterHtml += `
    <div class="item">
       <img src="./img/project/${i}.jpg" class="itemImg">
-      <p>${projechOjg.name[i]}</p>
+      <p>${projechOjg.name[i-1]}</p>
     </div>
     `;
 }
@@ -80,4 +80,5 @@ function openModule(){
 wordSeemore.addEventListener('click',()=>{
   workContent.style.height = "auto";
   seemoreDiv.style.display = "none";
+  waterfall.style.mixBlendMode = "normal"
 })
